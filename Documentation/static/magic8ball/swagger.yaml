@@ -1,0 +1,22 @@
+swagger: "2.0"
+info:
+  description: "This is a sample for \"Magic 8 Ball page\""
+  version: "1.0.0"
+  title: "Magic 8 Ball"
+host: "magic8ball.mytoyshop.com"
+basePath: "/magic8ball"
+paths:
+  /answer:
+    get:
+      summary: "Get an answer for \"Magic 8 Ball\""
+      description: "Description"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "object"
+            properties:
+              answer:
+                type: "string"
