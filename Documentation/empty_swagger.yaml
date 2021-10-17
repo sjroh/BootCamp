@@ -1,0 +1,22 @@
+swagger: "2.0"
+info:
+  description: "Description"
+  version: "1.0.0"
+  title: "Title"
+host: "magic8ball.mytoyshop.com"
+basePath: "BasePath"
+paths:
+  /something:
+    get:
+      summary: "summary"
+      description: "Description"
+      produces:
+      - "application/json"
+      responses:
+        "500":
+          description: "Internal server error"
+          schema:
+            type: "object"
+            properties:
+              reason:
+                type: "string"
